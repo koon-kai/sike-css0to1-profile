@@ -1,9 +1,18 @@
 
 body {
+    font-family: 'Open Sans','helvetica',arial,sans-serif;
+    font-weight: 300;
+    color: #62686f;
+
     background-image: url(http://uploads.striking.ly/page/images/backgrounds/bg5.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 300;
 }
 
 .container {
@@ -36,4 +45,95 @@ body {
     border: 3px solid white;
     border-radius: 999px;
     box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+}
+
+.main-nav {
+    text-align: center;
+    background-color: #333;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.main-nav ul li {
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.info-section {
+    padding: 30px 60px;
+    background-color: #fff;
+}
+
+.info-section header h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.info-section__description {
+    font-style: italic;
+}
+.whatido {
+    padding: 1px;
+    text-align: center;
+}
+
+.whatido h2:after{
+    display: block;
+    width: 80px;
+    margin: 5px auto;
+    content: "";
+    border-bottom: 3px solid black;
+}
+
+.whatido .whatido__skill-list {
+    list-style: none;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.whatido__skill {
+    float: left;
+    padding-top:100px;
+    width: 33.3%;
+    text-align: center;
+}
+
+.whatido__skill h3 {
+    text-transform: uppercase;
+}
+
+.whatido__skill--code {
+    background-image: url(../img/skill-code.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.whatido__skill--design {
+    background-image: url(../img/skill-design.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.whatido__skill--product {
+    background-image: url(../img/skill-product.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+   
 }
