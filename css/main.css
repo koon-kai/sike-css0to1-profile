@@ -1,4 +1,12 @@
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Open Sans','helvetica',arial,sans-serif;
     font-weight: 300;
@@ -40,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-header .main-header__avatar {
     display: block;
     margin: 0 auto;
-    margin-top: -70px;
+    margin-top: -70px;  
     margin-bottom: -60px;
     border: 3px solid white;
     border-radius: 999px;
@@ -78,12 +86,14 @@ h1, h2, h3, h4, h5, h6 {
 .info-section {
     padding: 30px 60px;
     background-color: #fff;
+    border-bottom: 1px solid #eee;
 }
 
 .info-section header h2 {
     font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .info-section__description {
@@ -91,10 +101,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .whatido {
     padding: 1px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
-.whatido h2:after{
+.info-section h2:after{
     display: block;
     width: 80px;
     margin: 5px auto;
@@ -136,4 +146,101 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: center top;
    
+}
+
+.education-experience ul {
+    list-style: none;
+}
+
+.education-experience__list li img{
+    float: left;
+    width: 180px;
+}
+
+.education-experience__list .content{
+    overflow: hidden;
+    margin-top: 40px;
+    padding-left: 70px;
+}
+
+.photos .info-section__description {
+    text-align: center;
+}
+
+.photos .photos__list{
+    overflow: hidden;
+}
+
+.photos ul {
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.photos ul li {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.photos ul li img {
+    width: 100%;
+}
+
+.get-in-touch ul {
+    list-style: none;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.get-in-touch ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+.contact button {
+    border: none;
+    border-radius: 9999px;
+    background: #ffd524;
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    color: #fff;
+    box-shadow: o 3px 0 #daae1d;
+}
+
+.contact form {
+    width: 40%;
+    margin: 60px auto;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact form button {
+    height: 40px;
+}
+
+.contact .box {
+    position: relative;
+}
+
+.contact .box label {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    padding: 8px;
+    text-align: right;
 }
